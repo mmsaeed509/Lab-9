@@ -33,3 +33,21 @@ push to github(I'm using an automated [**`git-push.sh`**](git-push.sh) script)
 # or keep script to generate the commit msg
 ./git-push.sh
 ```
+
+create a new branch
+
+```bash
+git checkout -b docker-build
+```
+
+build the docker image
+
+```bash
+docker build -t node-app-devops-bootcamp .
+```
+
+run the container
+
+```bash
+docker run --name devops-bootcamp -p 3000:3000 node-app-devops-bootcamp:latest
+```
