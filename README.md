@@ -51,3 +51,9 @@ run the container
 ```bash
 docker run --name devops-bootcamp -p 3000:3000 node-app-devops-bootcamp:latest
 ```
+
+push 
+
+```bash
+./git-push.sh -m "Added Docker Build File"
+```
